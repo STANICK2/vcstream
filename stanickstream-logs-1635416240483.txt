@@ -1,0 +1,76 @@
+2021-10-28T10:12:17.498734+00:00 app[api]: Stack changed from heroku-20 to container by user stanickstranger@gmail.com
+2021-10-28T10:12:17.517118+00:00 app[api]: Release v3 created by user stanickstranger@gmail.com
+2021-10-28T10:12:17.517118+00:00 app[api]: Upgrade stack to container by user stanickstranger@gmail.com
+2021-10-28T10:12:17.715211+00:00 app[api]: Release v4 created by user stanickstranger@gmail.com
+2021-10-28T10:12:17.715211+00:00 app[api]: Set API_ID, API_HASH, BOT_TOKEN, SESSION_STRING, CHAT, LOG_GROUP, QUALITY, ADMINS, ADMIN_ONLY, HEROKU_API_KEY, HEROKU_APP_NAME, STARTUP_STREAM, REPLY_MESSAGE config vars by user stanickstranger@gmail.com
+2021-10-28T10:12:18.000000+00:00 app[api]: Build started by user stanickstranger@gmail.com
+2021-10-28T10:15:51.000000+00:00 app[api]: Build succeeded
+2021-10-28T10:15:51.363705+00:00 app[api]: Deployed worker (6e494c60d0c4) by user stanickstranger@gmail.com
+2021-10-28T10:15:51.363705+00:00 app[api]: Release v5 created by user stanickstranger@gmail.com
+2021-10-28T10:15:52.138478+00:00 app[api]: Scaled to worker@1:Free by user stanickstranger@gmail.com
+2021-10-28T10:16:09.933840+00:00 heroku[worker.1]: Starting process with command `/bin/bash /start.sh`
+2021-10-28T10:16:10.550599+00:00 heroku[worker.1]: State changed from starting to up
+2021-10-28T10:16:10.668812+00:00 app[worker.1]: Cloning Repo....
+2021-10-28T10:16:10.668852+00:00 app[worker.1]: Cloning main branch....
+2021-10-28T10:16:10.670314+00:00 app[worker.1]: Cloning into '/VCPlayerBot'...
+2021-10-28T10:16:11.229387+00:00 app[worker.1]: WARNING: Ignoring invalid distribution -wh-pip (/usr/local/lib/python3.9/site-packages)
+2021-10-28T10:16:11.246283+00:00 app[worker.1]: WARNING: Ignoring invalid distribution -wh-pip (/usr/local/lib/python3.9/site-packages)
+2021-10-28T10:16:11.252715+00:00 app[worker.1]: Collecting git+https://github.com/pyrogram/pyrogram@master (from -r requirements.txt (line 1))
+2021-10-28T10:16:11.253289+00:00 app[worker.1]:   Cloning https://github.com/pyrogram/pyrogram (to revision master) to /tmp/pip-req-build-03opm4r1
+2021-10-28T10:16:11.256516+00:00 app[worker.1]:   Running command git clone --filter=blob:none -q https://github.com/pyrogram/pyrogram /tmp/pip-req-build-03opm4r1
+2021-10-28T10:16:12.191057+00:00 app[worker.1]:   Resolved https://github.com/pyrogram/pyrogram to commit aba5304fd69d913176b80b818b9c334775036c62
+2021-10-28T10:16:12.191789+00:00 app[worker.1]:   Preparing metadata (setup.py): started
+2021-10-28T10:16:12.436178+00:00 app[worker.1]:   Preparing metadata (setup.py): finished with status 'done'
+2021-10-28T10:16:12.440492+00:00 app[worker.1]: Requirement already satisfied: py-tgcalls==0.8.1rc1 in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (0.8.1rc1)
+2021-10-28T10:16:12.558622+00:00 app[worker.1]: Requirement already satisfied: parse-torrent-name in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 3)) (1.1.1)
+2021-10-28T10:16:12.565471+00:00 app[worker.1]: Requirement already satisfied: tgcrypto in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 4)) (1.2.2)
+2021-10-28T10:16:12.623611+00:00 app[worker.1]: Requirement already satisfied: yt-dlp in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 5)) (2021.10.22)
+2021-10-28T10:16:12.661932+00:00 app[worker.1]: Requirement already satisfied: youtube_search_python in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 6)) (1.4.9)
+2021-10-28T10:16:12.693513+00:00 app[worker.1]: Requirement already satisfied: youtube_search in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 7)) (2.1.0)
+2021-10-28T10:16:12.703391+00:00 app[worker.1]: Requirement already satisfied: heroku3 in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 8)) (4.2.3)
+2021-10-28T10:16:12.712639+00:00 app[worker.1]: Requirement already satisfied: pillow in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 9)) (8.4.0)
+2021-10-28T10:16:13.197409+00:00 app[worker.1]: Requirement already satisfied: motor in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 10)) (2.5.1)
+2021-10-28T10:16:13.223827+00:00 app[worker.1]: Requirement already satisfied: dnspython in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 11)) (2.1.0)
+2021-10-28T10:16:13.237878+00:00 app[worker.1]: Requirement already satisfied: pytz in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 12)) (2021.3)
+2021-10-28T10:16:13.363041+00:00 app[worker.1]: Requirement already satisfied: apscheduler in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 13)) (3.8.1)
+2021-10-28T10:16:13.386860+00:00 app[worker.1]: Requirement already satisfied: python-dotenv in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 14)) (0.19.1)
+2021-10-28T10:16:13.413025+00:00 app[worker.1]: Requirement already satisfied: psutil in /usr/local/lib/python3.9/site-packages (from py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (5.8.0)
+2021-10-28T10:16:13.413282+00:00 app[worker.1]: Requirement already satisfied: aiohttp in /usr/local/lib/python3.9/site-packages (from py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (3.7.4.post0)
+2021-10-28T10:16:13.416087+00:00 app[worker.1]: Requirement already satisfied: pyaes==1.6.1 in /usr/local/lib/python3.9/site-packages (from Pyrogram==1.2.9->-r requirements.txt (line 1)) (1.6.1)
+2021-10-28T10:16:13.416748+00:00 app[worker.1]: Requirement already satisfied: pysocks==1.7.1 in /usr/local/lib/python3.9/site-packages (from Pyrogram==1.2.9->-r requirements.txt (line 1)) (1.7.1)
+2021-10-28T10:16:13.425598+00:00 app[worker.1]: Requirement already satisfied: pycryptodomex in /usr/local/lib/python3.9/site-packages (from yt-dlp->-r requirements.txt (line 5)) (3.11.0)
+2021-10-28T10:16:13.425814+00:00 app[worker.1]: Requirement already satisfied: websockets in /usr/local/lib/python3.9/site-packages (from yt-dlp->-r requirements.txt (line 5)) (10.0)
+2021-10-28T10:16:13.426126+00:00 app[worker.1]: Requirement already satisfied: mutagen in /usr/local/lib/python3.9/site-packages (from yt-dlp->-r requirements.txt (line 5)) (1.45.1)
+2021-10-28T10:16:13.428593+00:00 app[worker.1]: Requirement already satisfied: httpx in /usr/local/lib/python3.9/site-packages (from youtube_search_python->-r requirements.txt (line 6)) (0.20.0)
+2021-10-28T10:16:13.430195+00:00 app[worker.1]: Requirement already satisfied: requests in /usr/local/lib/python3.9/site-packages (from youtube_search->-r requirements.txt (line 7)) (2.26.0)
+2021-10-28T10:16:13.433347+00:00 app[worker.1]: Requirement already satisfied: python-dateutil>=2.6.0 in /usr/local/lib/python3.9/site-packages (from heroku3->-r requirements.txt (line 8)) (2.8.2)
+2021-10-28T10:16:13.437866+00:00 app[worker.1]: Requirement already satisfied: pymongo<4,>=3.12 in /usr/local/lib/python3.9/site-packages (from motor->-r requirements.txt (line 10)) (3.12.1)
+2021-10-28T10:16:13.471225+00:00 app[worker.1]: Requirement already satisfied: six>=1.4.0 in /usr/local/lib/python3.9/site-packages (from apscheduler->-r requirements.txt (line 13)) (1.16.0)
+2021-10-28T10:16:13.471749+00:00 app[worker.1]: Requirement already satisfied: setuptools>=0.7 in /usr/local/lib/python3.9/site-packages (from apscheduler->-r requirements.txt (line 13)) (57.5.0)
+2021-10-28T10:16:13.472460+00:00 app[worker.1]: Requirement already satisfied: tzlocal!=3.*,>=2.0 in /usr/local/lib/python3.9/site-packages (from apscheduler->-r requirements.txt (line 13)) (4.0.2)
+2021-10-28T10:16:13.498747+00:00 app[worker.1]: Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/site-packages (from requests->youtube_search->-r requirements.txt (line 7)) (1.26.7)
+2021-10-28T10:16:13.499813+00:00 app[worker.1]: Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/site-packages (from requests->youtube_search->-r requirements.txt (line 7)) (2.0.7)
+2021-10-28T10:16:13.500297+00:00 app[worker.1]: Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/site-packages (from requests->youtube_search->-r requirements.txt (line 7)) (2021.10.8)
+2021-10-28T10:16:13.501540+00:00 app[worker.1]: Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/site-packages (from requests->youtube_search->-r requirements.txt (line 7)) (3.3)
+2021-10-28T10:16:13.510805+00:00 app[worker.1]: Requirement already satisfied: pytz-deprecation-shim in /usr/local/lib/python3.9/site-packages (from tzlocal!=3.*,>=2.0->apscheduler->-r requirements.txt (line 13)) (0.1.0.post0)
+2021-10-28T10:16:13.549284+00:00 app[worker.1]: Requirement already satisfied: chardet<5.0,>=2.0 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (4.0.0)
+2021-10-28T10:16:13.549836+00:00 app[worker.1]: Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (5.2.0)
+2021-10-28T10:16:13.550559+00:00 app[worker.1]: Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (21.2.0)
+2021-10-28T10:16:13.551078+00:00 app[worker.1]: Requirement already satisfied: async-timeout<4.0,>=3.0 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (3.0.1)
+2021-10-28T10:16:13.551576+00:00 app[worker.1]: Requirement already satisfied: typing-extensions>=3.6.5 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (3.10.0.2)
+2021-10-28T10:16:13.552060+00:00 app[worker.1]: Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.9/site-packages (from aiohttp->py-tgcalls==0.8.1rc1->-r requirements.txt (line 2)) (1.7.0)
+2021-10-28T10:16:13.564154+00:00 app[worker.1]: Requirement already satisfied: sniffio in /usr/local/lib/python3.9/site-packages (from httpx->youtube_search_python->-r requirements.txt (line 6)) (1.2.0)
+2021-10-28T10:16:13.564654+00:00 app[worker.1]: Requirement already satisfied: httpcore<0.14.0,>=0.13.3 in /usr/local/lib/python3.9/site-packages (from httpx->youtube_search_python->-r requirements.txt (line 6)) (0.13.7)
+2021-10-28T10:16:13.565335+00:00 app[worker.1]: Requirement already satisfied: rfc3986[idna2008]<2,>=1.3 in /usr/local/lib/python3.9/site-packages (from httpx->youtube_search_python->-r requirements.txt (line 6)) (1.5.0)
+2021-10-28T10:16:13.615889+00:00 app[worker.1]: Requirement already satisfied: h11<0.13,>=0.11 in /usr/local/lib/python3.9/site-packages (from httpcore<0.14.0,>=0.13.3->httpx->youtube_search_python->-r requirements.txt (line 6)) (0.12.0)
+2021-10-28T10:16:13.616403+00:00 app[worker.1]: Requirement already satisfied: anyio==3.* in /usr/local/lib/python3.9/site-packages (from httpcore<0.14.0,>=0.13.3->httpx->youtube_search_python->-r requirements.txt (line 6)) (3.3.4)
+2021-10-28T10:16:13.668754+00:00 app[worker.1]: Requirement already satisfied: tzdata in /usr/local/lib/python3.9/site-packages (from pytz-deprecation-shim->tzlocal!=3.*,>=2.0->apscheduler->-r requirements.txt (line 13)) (2021.5)
+2021-10-28T10:16:13.702224+00:00 app[worker.1]: WARNING: Ignoring invalid distribution -wh-pip (/usr/local/lib/python3.9/site-packages)
+2021-10-28T10:16:13.775694+00:00 app[worker.1]: WARNING: Ignoring invalid distribution -wh-pip (/usr/local/lib/python3.9/site-packages)
+2021-10-28T10:16:13.776123+00:00 app[worker.1]: WARNING: Ignoring invalid distribution -wh-pip (/usr/local/lib/python3.9/site-packages)
+2021-10-28T10:16:13.973973+00:00 app[worker.1]: Starting Bot....
+2021-10-28T10:16:14.247529+00:00 app[worker.1]: [28-Oct-21 10:16:14 - INFO] - utils.logger - Reply Message Found, Enabled PM MSG
+2021-10-28T10:16:21.670938+00:00 app[worker.1]: [28-Oct-21 10:16:21 - INFO] - utils.logger - Stanick_streambot Started.
+2021-10-28T10:16:25.817381+00:00 app[worker.1]: [28-Oct-21 10:16:25 - WARNING] - utils.logger - No DATABASE_URI , found. It is recommended to use a database.
+2021-10-28T10:16:25.817434+00:00 app[worker.1]: [28-Oct-21 10:16:25 - INFO] - utils.logger - Loop play enabled , starting playing startup stream.
+2021-10-28T10:16:26.522914+00:00 app[worker.1]: [28-Oct-21 10:16:26 - INFO] - utils.logger - YouTube Stream is set as STARTUP STREAM
